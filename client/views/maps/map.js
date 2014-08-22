@@ -1,3 +1,14 @@
+Template.map.rendered = function () {
+  // from 
+  // http://famous-tutorial.meteor.com/
+    var Engine = require("famous/core/Engine");
+
+    var destNode = document.getElementById(".map") || undefined;
+    var context = Engine.createContext(destNode);
+
+};
+
+
 Template.map.helpers({
   bits: function() {
     return Bits.find();
